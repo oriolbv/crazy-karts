@@ -6,6 +6,7 @@ public class Drive : MonoBehaviour
 {
     public WheelCollider WC;
     public float Torque = 200;
+    public GameObject Wheel;
 
     // Start is called before the first frame update
     void Start()
@@ -22,8 +23,8 @@ public class Drive : MonoBehaviour
         Quaternion quat;
         Vector3 position;
         WC.GetWorldPose(out position, out quat);
-        this.transform.position = position;
-        this.transform.rotation = quat;
+        Wheel.transform.position = position;
+        Wheel.transform.rotation = quat;
     }
 
     // Update is called once per frame
