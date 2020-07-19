@@ -18,6 +18,12 @@ public class Drive : MonoBehaviour
         acc = Mathf.Clamp(acc, -1, 1);
         float thrustTorque = acc * Torque;
         WC.motorTorque = thrustTorque;
+
+        Quaternion quat;
+        Vector3 position;
+        WC.GetWorldPose(out position, out quat);
+        this.transform.position = position;
+        this.transform.rotation = quat;
     }
 
     // Update is called once per frame
