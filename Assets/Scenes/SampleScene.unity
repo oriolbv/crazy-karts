@@ -709,6 +709,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   WC: {fileID: 680888638}
   Torque: 200
+  MaxSteerAngle: 30
   Wheel: {fileID: 1071613844}
 --- !u!146 &680888638
 WheelCollider:
@@ -915,7 +916,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   m_LocalRotation: {x: -0, y: 0.605972, z: -0, w: 0.79548603}
-  m_LocalPosition: {x: -9.62, y: 2.36, z: -1.28}
+  m_LocalPosition: {x: -9.620001, y: 2.36, z: -1.28}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1022,6 +1023,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   WC: {fileID: 1027827055}
   Torque: 200
+  MaxSteerAngle: 30
   Wheel: {fileID: 1307907082}
 --- !u!146 &1027827055
 WheelCollider:
@@ -1311,6 +1313,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   WC: {fileID: 1425336038}
   Torque: 200
+  MaxSteerAngle: 30
   Wheel: {fileID: 380040465}
 --- !u!146 &1425336038
 WheelCollider:
@@ -1404,6 +1407,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   WC: {fileID: 1808336621}
   Torque: 200
+  MaxSteerAngle: 30
   Wheel: {fileID: 438627873}
 --- !u!1 &1993130877
 GameObject:
