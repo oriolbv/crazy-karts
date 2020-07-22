@@ -130,6 +130,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 68394502}
+  - component: {fileID: 68394503}
   m_Layer: 0
   m_Name: KartParent
   m_TagString: Untagged
@@ -153,6 +154,31 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &68394503
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 68394501}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a0503507c0f07a43af5365d2f569a29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  WCs:
+  - {fileID: 1808336621}
+  - {fileID: 680888638}
+  - {fileID: 1027827055}
+  - {fileID: 1425336038}
+  Wheels:
+  - {fileID: 438627873}
+  - {fileID: 1071613844}
+  - {fileID: 1307907082}
+  - {fileID: 380040465}
+  Torque: 200
+  MaxSteerAngle: 30
+  Wheel: {fileID: 0}
 --- !u!1001 &191574319
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -228,7 +254,7 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: fcedef317808749c08531b589528be6b,
         type: 3}
       propertyPath: m_Name
-      value: FrontRightM
+      value: FrontRightMesh
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fcedef317808749c08531b589528be6b, type: 3}
@@ -412,7 +438,7 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: fcedef317808749c08531b589528be6b,
         type: 3}
       propertyPath: m_Name
-      value: RearRightM
+      value: RearRightMesh
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fcedef317808749c08531b589528be6b, type: 3}
@@ -525,7 +551,7 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: fcedef317808749c08531b589528be6b,
         type: 3}
       propertyPath: m_Name
-      value: FrontLeftM
+      value: FrontLeftMesh
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fcedef317808749c08531b589528be6b, type: 3}
@@ -604,7 +630,7 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: fcedef317808749c08531b589528be6b,
         type: 3}
       propertyPath: m_Name
-      value: RearLeftM
+      value: RearLeftMesh
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fcedef317808749c08531b589528be6b, type: 3}
@@ -695,22 +721,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 680888635}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &680888637
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 680888636}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0a0503507c0f07a43af5365d2f569a29, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  WC: {fileID: 680888638}
-  Torque: 200
-  MaxSteerAngle: 30
-  Wheel: {fileID: 1071613844}
 --- !u!146 &680888638
 WheelCollider:
   m_ObjectHideFlags: 0
@@ -1009,22 +1019,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1027827052}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1027827054
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1027827053}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0a0503507c0f07a43af5365d2f569a29, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  WC: {fileID: 1027827055}
-  Torque: 200
-  MaxSteerAngle: 30
-  Wheel: {fileID: 1307907082}
 --- !u!146 &1027827055
 WheelCollider:
   m_ObjectHideFlags: 0
@@ -1299,22 +1293,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1425336035}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1425336037
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1425336036}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0a0503507c0f07a43af5365d2f569a29, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  WC: {fileID: 1425336038}
-  Torque: 200
-  MaxSteerAngle: 30
-  Wheel: {fileID: 380040465}
 --- !u!146 &1425336038
 WheelCollider:
   m_ObjectHideFlags: 0
@@ -1393,22 +1371,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 281643490}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1808336624
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1808336620}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0a0503507c0f07a43af5365d2f569a29, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  WC: {fileID: 1808336621}
-  Torque: 200
-  MaxSteerAngle: 30
-  Wheel: {fileID: 438627873}
 --- !u!1 &1993130877
 GameObject:
   m_ObjectHideFlags: 0

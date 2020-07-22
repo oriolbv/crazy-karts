@@ -8,15 +8,14 @@ public class Drive : MonoBehaviour
     public GameObject[] Wheels;
     public float Torque = 200;
     public float MaxSteerAngle = 30;
-    public GameObject Wheel;
 
     // Start is called before the first frame update
     void Start()
     {
-        for (int i = 0; i < 4; i++) 
-        {
-            WCs[i] = this.GetComponent<WheelCollider>();
-        }
+        // for (int i = 0; i < 4; i++) 
+        // {
+        //     WCs[i] = this.GetComponent<WheelCollider>();
+        // }
     }
 
     void Go(float acc, float steer) 
