@@ -1,2 +1,2 @@
-# crazy-karts
+# Crazy Karts
 Multiplayer racing games developed in Unity3D
