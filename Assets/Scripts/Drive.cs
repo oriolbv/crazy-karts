@@ -44,8 +44,8 @@ public class Drive : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float acc = Input.GetAxis("Vertical");
-        float steer = Input.GetAxis("Horizontal");
-        Go(acc, steer);
+        //float acc = Input.GetAxis("Vertical");
+        //float steer = Input.GetAxis("Horizontal");
+        //Go(acc, steer);
     }
 }
